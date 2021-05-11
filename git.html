@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cheatsheet</title>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen"/>
+	</head>
+	<body>
+		<header>
+			<a href="index.html"><img src="./images/logo.png" width="20%"><br>
+			<h1>Emil's Cheatsheet</h1></a>
+			<a href="html.html"><button>HTML</button></a>
+			<a href="css.html"><button>CSS</button></a>
+			<a href="javascript.html"><button>JavaScript</button></a>
+			<a href="markdown.html"><button>Markdown</button></a>
+			<a href="git.html"><button class="selected">Git</button></a>
+		</header>
+		<nav>
+			<h2>Contents</h2>
+			<ul>
+				<li><a href="#setup">Setup</a></li>
+				<li><ul>
+					<li><a href="#name">Name</a></li>
+					<li><a href="#email">E-Mail</a></li>
+				</ul></li>
+				<li><a href="#initialization">Initialization</a></li>
+				<li><ul>
+					<li><a href="#cloning-repos">Cloning Repositories</a></li>
+					<li><a href="#initializing-repos">Initializing Repositories</a></li>
+				</ul></li>
+				<li><a href="#staging">Staging</a></li>
+				<li><ul>
+					<li><a href="#status">Status</a></li>
+					<li><a href="#adding-files">Adding files</a></li>
+					<li><a href="#committing">Committing</a></li>
+				</ul></li>
+				<li><a href="#push-and-pull">Push & Pull</a></li>
+				<li><ul>
+					<li><a href="#pushing">Pushing</a></li>
+					<li><a href="#pulling">Pulling</a></li>
+				</ul></li>
+			</ul>
+		</nav>
+		<section id="setup">
+			<h2>Setup</h2>
+			<article id="name">
+				<h3>Name</h3>
+				<p>This data will show up on all your commits, make sure not to make a typo! Setup your name globally like this:</p>
+				<p class="code">git config --global user.name "[firstname lastname]"</p>
+			</article>
+			<article id="email">
+				<h3>E-Mail</h3>
+				<p>This data will show up on all your commits, make sure not to make a typo! Setup your E-Mail adress globally like this:</p>
+				<p class="code">git config --global user.email "[e-mail]"</p>
+			</article>
+		</section>
+		<section id="initialization">
+			<h2>Initialization</h2>
+			<article id="initializing-repos">
+				<h3>Initializing Repositories</h3>
+				<p>You can initialize repositories by typing this while being in your target folder (will create a hidden .git folder):</p>
+				<p class="code">git init</p>
+			</article>
+			<article id="cloning-repos">
+				<h3>Cloning Repositories</h3>
+				<p>Cloning allows you to get an entire repository from the web (GitHub for example):</p>
+				<p class="code">git clone [url]</p>
+			</article>
+		</section>
+		<section id="staging">
+			<h2>Staging</h2>
+			<article id="status">
+				<h3>Status</h3>
+				<p>You can access your Git staging area and it's contents with:</p>
+				<p class="code">git status</p>
+			</article>
+			<article id="adding-files">
+				<h3>Adding files</h3>
+				<p>You can add files to your git staging area by typing:</p>
+				<p class="code">git add [file]</p>
+				<p>You can also add whole directories with:</p>
+				<p class="code"> git add .</p>
+			</article>
+			<article id="committing">
+				<h3>Committing</h3>
+				<p>You can commit like this:</p>
+				<p class="code">git commit -m "message"</p>
+			</article>
+		</section>
+		<section id="push-and-pull">
+			<article id="pushing">
+				<p>Pushing (Updating a remote repository from yours) works like this.</p>
+				<p class="code"> git push</p>
+			</article>
+			<article id="pulling">
+				<p>Pushing (Updating your repository from a remote repository) works like this.</p>
+				<p class="code">git pull</p>
+			</article>
+		</section>
+	</body>
+</html>

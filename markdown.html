@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cheatsheet</title>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen"/>
+	</head>
+	<body>
+		<header>
+			<a href="index.html"><img src="./images/logo.png" width="20%"><br>
+			<h1>Emil's Cheatsheet</h1></a>
+			<a href="html.html"><button>HTML</button></a>
+			<a href="css.html"><button>CSS</button></a>
+			<a href="javascript.html"><button>JavaScript</button></a>
+			<a href="markdown.html"><button class="selected">Markdown</button></a>
+			<a href="git.html"><button>Git</button></a>
+		</header>
+		<nav>
+			<h2>Contents</h2>
+			<ul>
+				<li><a href="#headings">Headings</a></li>
+				<li><a href="#tables">Tables</a></li>
+				<li><a href="#importance">Importance</a></li>
+				<li><a href="#newlines">New lines</a></li>
+			</ul>
+		</nav>
+		<article id="headings">
+			<h3>Headings</h3>
+			<p>Headings in Markdown are handled with Hashtags.</p>
+			<p class="code"># heading<br>Renders level 1 heading with text "heading"<br><br>## heading<br>Renders level 2 heading with text "heading"<br><br>### heading<br>Renders level 3 heading with text "heading"<br><br>#### heading<br>Renders level 4 heading with text "heading"<br><br>##### heading<br>Renders level 5 heading with text "heading"<br><br>###### heading<br>Renders level 6 heading with text "heading"</p>
+		</article>
+		<article id="tables">
+			<h3>Tables</h3>
+			<p>Tables in Markdown are created by seperating  table rows with <span class="code">|</span>. They also require a specification between header and content, which specifies the text allignment within particular colums as well as the number of columns. <span class="code">:----</span> makes a column left centered, <span class="code">:----:</span> centers it in the middle and <span class="code">----:</span> centers it to the right.</p>
+			<p class="code">|Column 1|Column 2|Column 3|<br>|:----|:----:|----:|<br>|is|is|is|<br>|alligned|perfectly|alligned|<br>|to the right|centered|to the left|</p>
+		</article>
+		<article id="importance">
+			<h3>Importance</h3>
+			<p>Text can be made bold by adding <span class="code">**</span> arround it.</p>
+			<p class="code">**Glad you're using my cheatsheet!**<br>Will render "Glad you're using my cheatsheet!" in bold.</p>
+		</article>
+		<article id="newlines">
+			<h3>New lines</h3>
+			<p>New lines can be created by having 2 spaces before a new line in Markdown text.</p>
+			<p class="code">Theres gonna be a new line below this  <br>Will create a newline (Remember, there are 2 spaces after the "now")</p>
+		</article>
+	</body>
+</html>
