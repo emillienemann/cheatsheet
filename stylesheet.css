@@ -2,6 +2,9 @@
 	font-family: Arial;
 }
 
+main {
+	padding-left: 2%;
+}
 
 h1 {
 	font-size: 160%;
