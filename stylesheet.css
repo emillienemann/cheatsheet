@@ -27,6 +27,7 @@ button {
 	text-align: center;
 	text-decoration: none;
 	font-size: 15px;
+	border: 1px solid black;
 }
 
 header a {
